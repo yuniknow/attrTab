@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이유진-.attr() tab</title>
+    <script src="./script/jquery-1.11.3.js"></script>
+    <script>
+        // attr () 선택한 요소에 새 속성을 생성하거나 변경
+        $(function(){
+            $(".btn1").on("click",function(){
+                $(".frame img").attr({"src":"./images/img1.png","art":"황금비율로고"}) // 새 속성 생성
+            });
+            $(".btn2").on("click",function(){
+                $(".frame img").attr({"src":"./images/img2.gif","art":"이름 애니메이션"}) // 새 속성 생성
+            });
+            $(".btn3").on("click",function(){
+                $(".frame img").attr({"src":"./images/img3.png","art":"사슴"})
+            });
+            $(".btn4").on("click",function(){
+                $(".frame img").attr({"src":"./images/img4.png","art":"메탈글자"})
+            });
+            $(".btn5").on("click",function(){
+                $(".frame img").attr({"src":"./images/img5.png","art":"네온꽃"})
+            });
+            $(".btn6").on("click",function(){
+                $(".frame img").attr({"src":"./images/img6.png","art":"네온꽃2"})
+            });
+        });
+    </script>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {background: #dedede;}
+        ul, li {margin: 0; padding: 0; list-style: none;}
+        #design {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+        #design .menu ul {display: flex; justify-content: space-between;}
+        #design .menu ul li a {display: block;
+            background: #000;
+            font-size: 14px;
+            text-decoration: none; color: #fff;
+            width: 110px;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;}
+        #design .menu ul li a:hover {background: #999;}
+        #design .menu ul li a:focus {background: #666;}
+    </style>
+</head>
+<body>
+    <div id="design">
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="btn1">황금비율로고</a></li>
+                <li><a href="#" class="btn2">이름 애니메이션</a></li>
+                <li><a href="#" class="btn3">사슴</a></li>
+                <li><a href="#" class="btn4">메탈글자</a></li>
+                <li><a href="#" class="btn5">네온꽃</a></li>
+                <li><a href="#" class="btn6">네온꽃2</a></li>
+            </ul>
+        </div>
+        <!-- frame -->
+        <div class="frame"><a href="#"><img src="./images/img2.gif" alt="이름 애니메이션"></a></div>
+    </div>
+</body>
+</html>
